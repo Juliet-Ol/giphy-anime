@@ -11,5 +11,6 @@ export class GiphyDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
