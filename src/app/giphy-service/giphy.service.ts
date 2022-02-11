@@ -14,12 +14,12 @@ export class GiphyService {
   }
 
   getTrendingGifs() {
-    return this.http.get(`http://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=50`);
+    return this.http.get(`http://api.giphy.com/v1/gifs/trending?api_key=${environment.giphyApiKey}&limit=90`);
 
   }
 
   searchGifs(search:string) {
-    return this.http.get(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=${environment.giphyApiKey}&limit=50`);
+    return this.http.get(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=${environment.giphyApiKey}&limit=90`);
 
   }
 }

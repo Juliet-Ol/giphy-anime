@@ -1,11 +1,12 @@
-<h1>GIPHY</h1>
-<h3>
+<h1>
+
     <app-navbar></app-navbar>
+</h1>    
     <div class="search">
         <h3>GIF search</h3>
         <input type="text" placeholder="GIF search" [(ngModel)]="search" (keyup.enter)="searchAction()">
     </div>
-</h3>
+
 
 <div class="gifs">
     <div class="gif" *ngFor="let gif of gifs">
