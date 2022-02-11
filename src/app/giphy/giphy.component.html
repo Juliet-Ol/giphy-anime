@@ -1,6 +1,18 @@
 <h1>GIPHY</h1>
 <h3>
-    <app-giphy-details></app-giphy-details>
-
-
+    <app-navbar></app-navbar>
+    <div class="search">
+        <h3>GIF search</h3>
+        <input type="text" placeholder="GIF search" [(ngModel)]="search" (keyup.enter)="searchAction()">
+    </div>
 </h3>
+
+<div class="gifs">
+    <div class="gif" *ngFor="let gif of gifs">
+        <h4>
+            {{gif.title}}
+        </h4>
+        <img [src]="gif.images.downsized.url" alt="images">
+
+    </div>
+</div>

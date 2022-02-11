@@ -2,3 +2,28 @@ h1 {
   text-align: center;
   
 }
+.gifs{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  margin: 10px;
+  
+}
+.gif{
+  width: 100px;
+  margin: 10px;
+}
+
+.search {
+  max-width: 600px;
+  margin: 30px;
+  text-align: center;
+  font-size: 15px;   
+ }
+ 
+ .search input {
+     width: 100%;
+     padding: 8px 16px;
+     margin-top: 20px;
+ }
+
